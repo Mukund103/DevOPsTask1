@@ -28,9 +28,9 @@ pipeline {
           }
         }
 
-        stage('') {
+        stage('Test2') {
           steps {
-            sh 'echo "Build2 successfull"'
+            sh 'echo \'Build2 successfull\''
           }
         }
 
