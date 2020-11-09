@@ -6,6 +6,7 @@ pipeline {
         stage('Buid1') {
           steps {
             git(url: 'https://github.com/Mukund103/DevOPsTask1.git', branch: 'main', changelog: true)
+            cleanWs(cleanWhenSuccess: true)
           }
         }
 
